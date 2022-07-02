@@ -4,13 +4,13 @@ import TaskInput from './TaskInput';
 
 const ToDo = () => {
     const [tasks, setTasks] = useState([]);
-    const [reload,setReload] = useState(false);
+    const [reload,setReload] = useState(true);
 
     useEffect(() =>{
         fetch(`https://boxing-inukshuk-00792.herokuapp.com/notes`)
         .then(res => res.json())
         .then(data => setTasks(data))
-    },[reload])
+    },[tasks])
 
 
     

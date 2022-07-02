@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes >
         <Route path="/calendar" element={<Calender />}/>
-        <Route path="/toDo" element={<ToDo />}/>
+        <Route path="/" element={<ToDo />}/>
         <Route path="/taskDone" element={<TaskDone />}/>
 
       </Routes>
